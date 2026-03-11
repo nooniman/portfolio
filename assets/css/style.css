@@ -121,6 +121,17 @@ img { max-width: 100%; }
     transform: translateY(-2px);
 }
 
+.btn-download {
+    background: transparent;
+    color: var(--green);
+    border: 1.5px solid var(--green);
+}
+
+.btn-download:hover {
+    background: rgba(74, 222, 128, 0.1);
+    transform: translateY(-2px);
+}
+
 .btn-full { width: 100%; justify-content: center; }
 
 .navbar {

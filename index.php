@@ -145,6 +145,7 @@ $certifications = [
             <p class="hero-title"><?= htmlspecialchars($title) ?></p>
             <p class="hero-location"><i class="fa-solid fa-location-dot"></i> <?= htmlspecialchars($location) ?></p>            <div class="hero-actions">                <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
                 <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                <a href="DEMONTEVERDE_ANASMOHAMMAD-Resume.pdf" download class="btn btn-download"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
             </div>
             <div class="hero-socials">
                 <a href="mailto:<?= $email ?>" title="Email"><i class="fa-solid fa-envelope"></i></a>
