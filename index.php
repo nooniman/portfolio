@@ -436,13 +436,13 @@ $certifications = [
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" action="contact.php" method="POST">
-                    <?php if ($flash): ?>
-                    <div class="flash flash-<?= $flash['type'] ?>">
-                        <i class="fa-solid <?= $flash['type'] === 'success' ? 'fa-circle-check' : 'fa-circle-exclamation' ?>"></i>
-                        <?= htmlspecialchars($flash['msg']) ?>
-                    </div>
-                    <?php endif; ?>
+                <form class="contact-form" action="https://formsubmit.co/anasdemonteverde@gmail.com" method="POST">
+                    
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="New inquiry from your Nas Portfolio!">
+                    <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_captcha" value="true">
+
                     <div class="form-group">
                         <label for="fname">Your Name</label>
                         <input type="text" id="fname" name="name" placeholder="John Doe" required />
@@ -453,7 +453,7 @@ $certifications = [
                     </div>
                     <div class="form-group">
                         <label for="fsubject">Subject</label>
-                        <input type="text" id="fsubject" name="subject" placeholder="Project Inquiry" required />
+                        <input type="text" id="fsubject" name="_subject" placeholder="Project Inquiry" required />
                     </div>
                     <div class="form-group">
                         <label for="fmessage">Message</label>
